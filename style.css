@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    background-color: #f0f0f0;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('inv.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.1); 
+    text-align: center;
+}
+
+
+#videos-section {
+    background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo escuro semi-transparente */
+    padding: 20px;
+    margin-top: 50px; /* Espaçamento superior para separar do conteúdo anterior */
+}
+
+#videos-section p {
+    font-size: 20px;
+    color: #fff; /* Texto em branco para maior contraste */
+    margin-bottom: 10px; /* Espaçamento inferior para separar do link */
+}
+
+#videos-section a {
+    display: inline-block; /* Permite ajustar a largura do link */
+    padding: 10px 20px;
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #fff; /* Texto em branco para maior contraste */
+    text-decoration: none; /* Remove sublinhado padrão */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transição suave de cor ao passar o mouse */
+}
+
+#videos-section a:hover {
+    background-color: #0056b3; /* Cor de fundo azul mais escura ao passar o mouse */
+}
+
+
+#videos-section {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 50px;
+    position: relative; /* Define a posição relativa para facilitar o posicionamento absoluto da frase */
+}
+
+#videos-section p {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#videos-section .moving-text {
+    position: absolute; /* Define a posição absoluta para que a frase possa se mover */
+    color: #000; /* Cor preta */
+    font-size: 24px; /* Tamanho da fonte um pouco maior para destacar */
+    animation: moveText 5s linear infinite alternate; /* Define a animação */
+}
+
+@keyframes moveText {
+    from {
+        left: 0; /* Começa do lado esquerdo */
+    }
+    to {
+        left: calc(100% - 100px); /* Termina do lado direito */
+    }
+}

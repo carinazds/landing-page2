@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planilha de investimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tenha controle de seus investimentos</h1>
+        <p>Faça o download gratuito de nossa planilha de controle financeiro preenchendo o formulário abaixo:</p>
+        <form id="form">
+            <input type="text" name="nome" placeholder="Seu Nome Completo" required><br>
+            <input type="email" name="email" placeholder="Seu Email" required><br>
+            <a href="https://docs.google.com/spreadsheets/d/1CjmHcM2BTo91sKA9TjAfHetr_M7dFa4On9e5bohQsck/edit#gid=2125010842" id="download-link"><input type="submit" value="Baixar Agora"></a>
+        </form>
+    </div>
+
+    <p>Quer saber como investir mesmo ganhando pouco?</p><a href="https://docs.google.com/spreadsheets/d/1CjmHcM2BTo91sKA9TjAfHetr_M7dFa4On9e5bohQsck/edit#gid=2125010842"> Clique aqui</a>
+
+    <section id="videos-section">
+        <h2>Inscreva-se no Canal</h2>
+        <p>Confira nossos vídeos exclusivos sobre investimentos.</p>
+        <p class="moving-text">Fique por dentro das melhores dicas!</p>
+        <a href="https://www.youtube.com/@ACaraDaRiquezaOficial/videos" target="_blank">Assistir Agora</a>
+    </section>
+
+    <script>
+        document.getElementById("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var nome = document.getElementsByName("nome")[0].value;
+            var email = document.getElementsByName("email")[0].value;
+            console.log("Nome: " + nome);
+            console.log("Email: " + email);
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
